@@ -123,10 +123,11 @@ All colors MUST be HSL.
 
   .glow-effect::before {
     content: '';
-    @apply absolute inset-0 rounded-inherit opacity-0 transition-opacity duration-300;
+    @apply absolute inset-0 opacity-0 transition-opacity duration-300;
     background: var(--gradient-glow);
     filter: blur(20px);
     z-index: -1;
+    border-radius: inherit;
   }
 
   .glow-effect:hover::before {
